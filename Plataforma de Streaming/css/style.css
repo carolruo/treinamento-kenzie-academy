@@ -1,0 +1,106 @@
+/*
+Theme Name: KenzieFlix
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/* VARIÁVEIS */
+:root{
+	background-color: #00002E;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+	body{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+/*TOPO*/
+	header.topo{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	h2 {
+		color: white;
+		font-size: 250%;
+	}
+
+	section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	section ul {
+		width: 858px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 186px;
+	}
+	
+	.addPerfil {
+		display: flex;
+	}
+
+	figcaption { 
+		opacity: 0; 
+	}
+
+	img {
+		width: 186px;
+	}
+
+	h3 {
+		color: white;
+		font-weight: lighter;
+	}
+
+/*RODAPÉ*/
+	button {
+		background-color: #00002E; /* Green */
+		border: 2px solid white;
+		color: white;
+		border-radius: 2px;
+		padding: 15px 32px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+/*PÁGINA INICIAL*/
+	div.pg-home{
+		
+	}
+
+	@media(max-width: 1250px) {
+		body {
+		  /* display */
+		  	display: flex;
+			flex-direction: row;
+    		align-items: space-between;
+			flex-wrap: wrap;
+		}
+	}
